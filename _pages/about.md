@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "👋 About Me"
+title: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
@@ -65,7 +65,7 @@ I'm currently working on neural encoding models and using fMRI data to understan
 
 ## 📢 Open to Collaborations
 
-I’m always happy to connect with researchers and engineers interested in brain-inspired AI, neuroimaging, or cognitive modeling. If you’re working on something exciting, feel free to [get in touch](mailto:your-email@uci.edu)!
+I’m always happy to connect with researchers and engineers interested in brain-inspired AI, neuroimaging, or cognitive modeling. If you’re working on something exciting, feel free to [get in touch](mailto:hazimias@uci.edu)!
 
 ---
 
