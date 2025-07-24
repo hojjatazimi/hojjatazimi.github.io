@@ -1,20 +1,20 @@
 ---
 permalink: /
-title: "Hojjat Azimi"
+title: "👋 About Me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-# Hojjat Azimi
+<!-- # Hojjat Azimi
 
-**PhD Candidate · Cognitive Neuroscience & AI · UC Irvine**  
-[Email](mailto:your-email@uci.edu) | [GitHub](https://github.com/yourusername) | [LinkedIn](https://www.linkedin.com/in/yourusername/) | [CV](./cv.pdf)
+**PhD Candidate · Cognitive Neuroscience & AI · UC Irvine**   -->
+<!-- [Email](mailto:your-email@uci.edu) | [GitHub](https://github.com/yourusername) | [LinkedIn](https://www.linkedin.com/in/yourusername/) | [CV](./cv.pdf) -->
 
 ---
 
-## 👋 About Me
+<!-- ## 👋 About Me -->
 
 I’m a PhD candidate in Cognitive Neuroscience at UC Irvine, with a strong background in artificial intelligence (MS in AI, BS in Software Engineering). My research focuses on understanding how the brain represents uncertainty and how these insights can inform and improve modern machine learning models. I work closely with neuroimaging, computational modeling, and generative AI systems.
 
