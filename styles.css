@@ -2,14 +2,14 @@
   color-scheme: light;
   --bg: #ffffff;
   --panel: #ffffff;
-  --panel-strong: #f5f5f5;
-  --text: #1e2a36;
-  --muted: #61707c;
-  --border: rgba(30, 42, 54, 0.1);
-  --accent: #1f4f82;
-  --accent-strong: #173a60;
-  --accent-soft: #5f7891;
-  --shadow: 0 6px 18px rgba(30, 42, 54, 0.035);
+  --panel-strong: #eef7ff;
+  --text: #17324a;
+  --muted: #5e7690;
+  --border: rgba(56, 152, 236, 0.18);
+  --accent: #58b8ff;
+  --accent-strong: #2797ea;
+  --accent-soft: #68bfff;
+  --shadow: 0 6px 18px rgba(88, 184, 255, 0.08);
 }
 
 * {
@@ -87,12 +87,12 @@ a {
   min-height: 40px;
   padding: 0 16px;
   border-radius: 999px;
-  border: 1px solid rgba(31, 79, 130, 0.18);
-  background: linear-gradient(180deg, #1f4f82 0%, #173a60 100%);
+  border: 1px solid rgba(88, 184, 255, 0.26);
+  background: linear-gradient(180deg, #58b8ff 0%, #2797ea 100%);
   color: #ffffff;
   font-weight: 700;
   font-size: 0.95rem;
-  box-shadow: 0 10px 24px rgba(31, 79, 130, 0.16);
+  box-shadow: 0 10px 24px rgba(88, 184, 255, 0.2);
   transition:
     transform 140ms ease,
     box-shadow 140ms ease,
@@ -101,7 +101,7 @@ a {
 
 .cv-download:hover {
   transform: translateY(-1px);
-  box-shadow: 0 12px 28px rgba(31, 79, 130, 0.2);
+  box-shadow: 0 12px 28px rgba(88, 184, 255, 0.24);
   color: #ffffff;
 }
 
@@ -169,9 +169,9 @@ a {
 }
 
 .button-primary {
-  background: var(--text);
+  background: linear-gradient(180deg, #58b8ff 0%, #2797ea 100%);
   color: #ffffff;
-  border-color: var(--text);
+  border-color: rgba(88, 184, 255, 0.2);
 }
 
 .button-secondary,
@@ -404,6 +404,22 @@ a {
 .site-nav a:hover,
 .brand:hover {
   color: var(--accent-strong);
+}
+
+.button-icon {
+  width: 15px;
+  height: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  flex: 0 0 auto;
+}
+
+.button-icon svg {
+  width: 15px;
+  height: 15px;
+  display: block;
 }
 
 .contact-panel {
