@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hojjat Azimi Asrari | Personal Site</title>
+    <meta
+      name="description"
+      content="Personal website for Hojjat Azimi Asrari featuring research, publications, teaching, and contact information."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top">Hojjat Azimi Asrari</a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">PhD Candidate in Cognitive Neuroscience</p>
+            <h1>Studying how the brain builds and uses higher-order representations of uncertainty.</h1>
+            <p class="hero-text">
+              I am Hojjat Azimi Asrari, a PhD candidate at the University of
+              California, Irvine working at the Reflexion Lab. My work combines
+              cognitive neuroscience, generative AI, neurofeedback, and neural
+              data analysis to study metacognition and brain-state regulation.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#research">Explore research</a>
+              <a class="button button-secondary" href="#contact">Get in touch</a>
+            </div>
+          </div>
+
+          <aside class="hero-panel" aria-label="Profile snapshot">
+            <img
+              class="profile-art"
+              src="./assets/hojjat-portrait.jpg"
+              alt="Portrait of Hojjat Azimi Asrari wearing an EEG cap in a lab setting."
+            />
+            <div class="profile-meta minimal-meta">
+              <div class="meta-block">
+                <span class="profile-tag">Affiliation</span>
+                <p>University of California, Irvine<br />Reflexion Lab</p>
+              </div>
+              <div class="meta-block">
+                <span class="profile-tag">Focus</span>
+                <p>Generative AI, neurofeedback, neural uncertainty, multimodal experiments</p>
+              </div>
+              <div class="meta-block">
+                <span class="profile-tag">Background</span>
+                <p>M.Sc. Artificial Intelligence<br />B.Sc. Software Engineering</p>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section class="section" id="about">
+          <div class="section-heading">
+            <p class="section-label">About</p>
+            <h2>Research at the intersection of neuroscience and computation.</h2>
+          </div>
+          <div class="about-grid">
+            <div class="about-card">
+              <p>
+                I develop computational models and experimental paradigms to
+                understand how humans represent uncertainty and learn to regulate
+                their own brain states. My work spans fMRI, EEG, fNIRS,
+                physiological biomarkers, and machine learning.
+              </p>
+            </div>
+            <div class="about-card">
+              <p>
+                Before starting my PhD at UC Irvine, I completed an M.Sc. in
+                Artificial Intelligence at the University of Tehran and a B.Sc.
+                in Computer Software Engineering at Sadjad University of
+                Technology.
+              </p>
+            </div>
+            <div class="about-card stats-card">
+              <div>
+                <span class="stat-number">2022</span>
+                <span class="stat-label">Started PhD at UC Irvine</span>
+              </div>
+              <div>
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Human participants across multimodal studies</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="research">
+          <div class="section-heading">
+            <p class="section-label">Research</p>
+            <h2>Selected projects across computational neuroscience and neurotechnology.</h2>
+          </div>
+          <div class="project-grid" id="research-grid"></div>
+        </section>
+
+        <section class="section notes-section" id="publications">
+          <div class="section-heading">
+            <p class="section-label">Publications</p>
+            <h2>Recent papers and conference work.</h2>
+          </div>
+          <div class="publication-list" id="publication-list"></div>
+        </section>
+
+        <section class="section" id="teaching">
+          <div class="section-heading">
+            <p class="section-label">Teaching</p>
+            <h2>Courses and invited instruction in neural data analysis and statistics.</h2>
+          </div>
+          <div class="notes-grid" id="teaching-grid"></div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+          <div class="section-heading">
+            <p class="section-label">Contact</p>
+            <h2>Open to research conversations, collaboration, and academic connections.</h2>
+          </div>
+          <div class="contact-panel">
+            <p>
+              The best way to reach me is by email. This site highlights my work
+              in cognitive neuroscience, computational modeling, and neurotechnology.
+            </p>
+            <div class="contact-links" id="contact-links"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
