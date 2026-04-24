@@ -81,10 +81,68 @@ const siteContent = {
     }
   ],
   contacts: [
-    { label: "UCI Email", href: "mailto:hazimias@uci.edu" },
-    { label: "Personal Email", href: "mailto:hojjatazimi2@gmail.com" },
-    { label: "GitHub", href: "https://github.com/hojjatazimi" }
+    {
+      label: "UCI Email",
+      href: "mailto:hazimias@uci.edu",
+      icon: "email"
+    },
+    {
+      label: "Personal Email",
+      href: "mailto:hojjatazimi2@gmail.com",
+      icon: "email"
+    },
+    {
+      label: "GitHub",
+      href: "https://github.com/hojjatazimi",
+      icon: "github"
+    },
+    {
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/hojjat-azimi-asrari-85a65a105/",
+      icon: "linkedin"
+    },
+    {
+      label: "ORCID",
+      href: "https://orcid.org/0000-0001-6520-749X",
+      icon: "orcid"
+    },
+    {
+      label: "Google Scholar",
+      href: "https://scholar.google.com/citations?user=-QSO73QAAAAJ&hl=en",
+      icon: "scholar"
+    }
   ]
+};
+
+const icons = {
+  email: `
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 6.5h16v11H4z" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <path d="M5 8l7 5 7-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  `,
+  github: `
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 3.5a8.5 8.5 0 0 0-2.7 16.56c.43.08.58-.18.58-.41v-1.46c-2.35.5-2.85-1-2.85-1-.39-.97-.95-1.22-.95-1.22-.78-.54.06-.53.06-.53.86.06 1.31.88 1.31.88.77 1.31 2.01.93 2.5.71.08-.56.3-.93.55-1.14-1.88-.21-3.86-.94-3.86-4.17 0-.92.33-1.68.87-2.27-.09-.21-.38-1.07.08-2.23 0 0 .71-.23 2.33.87a8.2 8.2 0 0 1 4.24 0c1.62-1.1 2.33-.87 2.33-.87.46 1.16.17 2.02.08 2.23.54.59.87 1.35.87 2.27 0 3.24-1.99 3.95-3.89 4.16.31.27.58.79.58 1.6v2.38c0 .23.15.5.59.41A8.5 8.5 0 0 0 12 3.5Z" fill="currentColor"/>
+    </svg>
+  `,
+  linkedin: `
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M6.2 8.2a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8Zm-1.2 2.1h2.4V19H5Zm5.1 0h2.3v1.2h.03c.32-.6 1.1-1.4 2.27-1.4 2.43 0 2.88 1.6 2.88 3.67V19h-2.4v-4.65c0-1.1-.02-2.52-1.54-2.52-1.54 0-1.77 1.2-1.77 2.44V19H10.1Z" fill="currentColor"/>
+    </svg>
+  `,
+  orcid: `
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <path d="M8.2 8.5h1.6v7H8.2zM9 7.2a.9.9 0 1 1 0-1.8.9.9 0 0 1 0 1.8Zm3 .9h2.6c2.3 0 3.8 1.4 3.8 3.5S16.9 15 14.7 15H12Zm1.6 5.4h.9c1.47 0 2.35-.65 2.35-1.95 0-1.28-.9-1.95-2.35-1.95h-.9Z" fill="currentColor"/>
+    </svg>
+  `,
+  scholar: `
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="m12 4 9 5-9 5-9-5 9-5Z" fill="currentColor"/>
+      <path d="M7 12.4V16c0 1.7 2.24 3 5 3s5-1.3 5-3v-3.6l-5 2.78Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    </svg>
+  `
 };
 
 function makeLink(label, href) {
@@ -160,7 +218,14 @@ function renderContacts() {
   const contactLinks = document.querySelector("#contact-links");
 
   contactLinks.innerHTML = siteContent.contacts
-    .map((item) => makeLink(item.label, item.href))
+    .map(
+      (item) => `
+        <a class="inline-link contact-link" href="${item.href}" target="_blank" rel="noreferrer">
+          <span class="contact-icon">${icons[item.icon] || ""}</span>
+          <span>${item.label}</span>
+        </a>
+      `
+    )
     .join("");
 }
 

@@ -333,6 +333,26 @@ a {
   flex-wrap: wrap;
 }
 
+.contact-link {
+  gap: 8px;
+}
+
+.contact-icon {
+  width: 14px;
+  height: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-strong);
+  flex: 0 0 auto;
+}
+
+.contact-icon svg {
+  width: 14px;
+  height: 14px;
+  display: block;
+}
+
 .publication-item {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
