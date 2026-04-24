@@ -181,15 +181,17 @@ function renderPublicationList() {
   publicationList.innerHTML = siteContent.publications
     .map(
       (note) => `
-        <article class="publication-item">
-          <div class="publication-main">
-            <div class="publication-header">
+        <article class="note-card">
+          <div>
+            <div class="note-header">
               <h3>${note.title}</h3>
               <span class="project-tag">${note.date}</span>
             </div>
             <p>${note.description}</p>
           </div>
-          <a class="inline-link publication-link" href="${note.href}" target="_blank" rel="noreferrer">${note.linkLabel}</a>
+          <div class="project-links">
+            <a class="inline-link" href="${note.href}" target="_blank" rel="noreferrer">${note.linkLabel}</a>
+          </div>
         </article>
       `
     )

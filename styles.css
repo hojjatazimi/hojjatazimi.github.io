@@ -247,8 +247,7 @@ a {
 
 .about-grid,
 .project-grid,
-.notes-grid,
-.publication-list {
+.notes-grid {
   display: grid;
   gap: 16px;
 }
@@ -263,10 +262,6 @@ a {
 
 .notes-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.publication-list {
-  grid-template-columns: 1fr;
 }
 
 .about-card,
@@ -353,41 +348,6 @@ a {
   display: block;
 }
 
-.publication-item {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 18px;
-  align-items: center;
-  padding: 18px 0;
-  border-top: 1px solid var(--border);
-}
-
-.publication-item:last-child {
-  border-bottom: 1px solid var(--border);
-}
-
-.publication-header {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  align-items: start;
-}
-
-.publication-header h3 {
-  margin: 0;
-  font-size: 1.08rem;
-}
-
-.publication-main p {
-  margin: 10px 0 0;
-  color: var(--muted);
-  line-height: 1.7;
-}
-
-.publication-link {
-  white-space: nowrap;
-}
-
 .inline-link {
   display: inline-flex;
   align-items: center;
@@ -442,11 +402,6 @@ a {
   .notes-grid,
   .contact-panel {
     grid-template-columns: 1fr;
-  }
-
-  .publication-item {
-    grid-template-columns: 1fr;
-    align-items: start;
   }
 
   .hero {
